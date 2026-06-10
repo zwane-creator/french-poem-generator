@@ -3,11 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI poem generator</title>
+    <title>AI French poem generator</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
   </head>
   <body>
-    <h1>Welcome to the French poem generator</h1>
-    <script src="src/index.js"></script>
+    <div class="container">
+    <header>
+        <h1>AI French poem generator</h1>
+    </header>
+
+    <main>
+        <form id="poem-generator">
+            <input type="text" placeholder="Enter the topic of the french poem" 
+            autofocus 
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"/>
+            <input type="submit" 
+            class="submit-button"/>
+        </form>
+        <div class="poem" id="poem">
+            Les sanglots longs
+            <br / >
+
+        </div>
+    </main>
+    
+    
+
+    <footer>
+      This project was coded by
+      <a href="https://github.com/zwane-creator">Zamangwe Zwane</a> and is
+      <a
+        href="https://github.com/zwane-creator?tab=repositories"
+        target="_blank"
+      >
+        open-sourced on Github
+      </a>
+      and is
+      <a href="https://poem-generates.netlify.app/" target="_blank">
+        hosted on Netlify</a
+      >
+    
+    <script src="src/index.js"></script> 
+    </footer>
+    </div>
   </body>
 </html>
