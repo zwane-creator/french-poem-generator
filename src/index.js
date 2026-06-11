@@ -20,7 +20,7 @@ function generatePoem(event) {
 
   let poemElement = document.querySelector("#poem");
   poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="generating"> ⏳ Generating a French poem about ${instructionsInput.value}</div>`;
+  poemElement.innerHTML = `<div class="generating"> ⏳ Generating a Zulu poem about ${instructionsInput.value}</div>`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
