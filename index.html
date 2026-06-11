@@ -10,46 +10,46 @@
   </head>
   <body>
     <div class="container">
-    <header>
+      <header>
         <h1>AI French poem generator</h1>
-    </header>
+      </header>
 
-    <main>
-        <form id="poem-generator">
-            <input type="text" placeholder="Enter the topic of the french poem" 
-            autofocus 
-            required
-            autocomplete="off"
-            class="instructions"
-            id="user-instructions"/>
-            <input type="submit" 
-            class="submit-button"/>
-        </form>
-        <div class="poem" id="poem">
-            Les sanglots longs
-            <br / >
-
+      <main>
+        <div class="form-wrapper">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic of the french poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">ie. butterfly, petals, love</div>
         </div>
-    </main>
-    
-    
 
-    <footer>
-      This project was coded by
-      <a href="https://github.com/zwane-creator">Zamangwe Zwane</a> and is
-      <a
-        href="https://github.com/zwane-creator?tab=repositories"
-        target="_blank"
-      >
-        open-sourced on Github
-      </a>
-      and is
-      <a href="https://poem-generates.netlify.app/" target="_blank">
-        hosted on Netlify</a
-      >
-    
-    <script src="src/index.js"></script> 
-    </footer>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/zwane-creator">Zamangwe Zwane</a> and is
+        <a
+          href="https://github.com/zwane-creator?tab=repositories"
+          target="_blank"
+        >
+          open-sourced on Github
+        </a>
+        and is
+        <a href="https://poem-generates.netlify.app/" target="_blank">
+          hosted on Netlify</a
+        >
+
+        <script src="src/index.js"></script>
+      </footer>
     </div>
   </body>
 </html>
